@@ -1,10 +1,7 @@
-# CAPTION.Ninja
+#Speech to Text using Machine Learning
 
 This is a free-to-use captioning tool.
 
-Demo video here: https://www.youtube.com/watch?v=v7172QO8z6c
-
-![image](https://user-images.githubusercontent.com/2575698/169529892-8764c5df-354c-4fad-85e5-c8ecfec4cc95.png)
 
 ### How to use
 
@@ -22,7 +19,7 @@ If you wish to save the transcriptions, just select-all when done (ctrl+a), copy
 
 ### Studio integration
 
-Add it to OBS, VMix or other studio software as a browser source overlay if wishing to use it for a live stream. It also works with the Electron Capture app, which can allow you to pin the app on-top of other apps on your desktop with ease. https://github.com/steveseguin/electroncapture
+Add it to OBS, VMix or other studio software as a browser source overlay if wishing to use it for a live stream. It also works with the Electron Capture app, which can allow you to pin the app on-top of other apps on your desktop with ease.
 
 ### Changing the font-size and more
 If wishing to change the CSS, you can self-host JUST the overlay.html file, modify it, and load that into your browser. You can still use the main website for capture, and just have different variations of the overlay.html file locally.  
@@ -66,8 +63,6 @@ body {
 ````
 The base64 string will be quite long; this is normal.
 
-![image](https://user-images.githubusercontent.com/2575698/148278546-2b0e25b8-cb31-45fa-b043-937d108db76e.png)
-
 
 ### Language codes
 Language codes options available; default is `&lang=en-US`.  Just change the en-ES to a language code of your choosing.  A list of codes is here: https://cloud.google.com/speech-to-text/docs/languages
@@ -90,11 +85,7 @@ Add &label=xxx to the capture page to give the outbound messages a label. (index
 By default, labels will be input-santized, so special characters will be converted to just text, but you can accept HTML/CSS within the label if you add &html to the overlay page.  This decreases the security of the overlay page, but increases its stylistic flexiblity.
 
 For example, this will make the display name bold on the output.
-```
-https://caption.ninja/?room=abc123&label=<b>steve</b>
-https://caption.ninja/overlay?room=abc123&html
-```
-![image](https://user-images.githubusercontent.com/2575698/168219952-827734a2-75bd-45bc-9d8d-f0d7a98fe96c.png)
+
 
 ### Self-hosting
 
@@ -104,5 +95,3 @@ You can deploy your own basic websocket server with this code: https://github.co
 
 The actual voice to text transcriptions are done usually on Google cloud servers, so it's not possible in most cases to fully-self host the service, although some devices, like Pixel smartphones, may do on-device voice to text rather than using the Google cloud.
 
-### Disclaimers
-I am not responsible if this app fails to work or whatever else. It is provided as-is without warranty or support. I do not take responsibility for any liability.
