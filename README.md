@@ -80,7 +80,7 @@ You can enter with your keybaord text overlays, instead of using automatic trans
 
 ### Adding labels
 
-Add &label=xxx to the capture page to give the outbound messages a label. (index.html?label=steve) This label will appear on the overlay page.
+Add &label=xxx to the capture page to give the outbound messages a label. (index.html?label=abc) This label will appear on the overlay page.
 
 By default, labels will be input-santized, so special characters will be converted to just text, but you can accept HTML/CSS within the label if you add &html to the overlay page.  This decreases the security of the overlay page, but increases its stylistic flexiblity.
 
@@ -91,7 +91,7 @@ For example, this will make the display name bold on the output.
 
 Self-hosting is possible to do for free. You can fork this Github repository, use Github pages to host the website for free, and then modify the website code as needed. This is useful for custom styling the site, creating a custom domain name, or specifying a private websocket forwarding service to use.  This app is compatible with generic websocket forwarding services.
 
-You can deploy your own basic websocket server with this code: https://github.com/steveseguin/websocket_server/  Hosting this server code on Amazon AWS or Google Cloud can be done for free as a micro server instance in most cases; pretty straight forward for someone technical. The websocket code is used for forwarding the messages from capture page to overlay display page; self-hosting the server code can provide a sense of added privacy.
+You can deploy your own basic websocket server with this code:  Hosting this server code on Amazon AWS or Google Cloud can be done for free as a micro server instance in most cases; pretty straight forward for someone technical. The websocket code is used for forwarding the messages from capture page to overlay display page; self-hosting the server code can provide a sense of added privacy.
 
 The actual voice to text transcriptions are done usually on Google cloud servers, so it's not possible in most cases to fully-self host the service, although some devices, like Pixel smartphones, may do on-device voice to text rather than using the Google cloud.
 
